@@ -1,5 +1,5 @@
 ID_Equipo,Tipo_Equipo,Fabricante,Fecha_Instalacion,Vida_Util_Anios,Potencia_kW
-E001,Turbina,Fabricante B,2015-01-01,25,3603
+E001,Turbina,Fabricante B,2015-01-01,52,3603
 E002,Bomba,Fabricante C,2015-01-02,29,4696
 E003,Bomba,Fabricante C,2015-01-03,19,3880
 E004,Bomba,Fabricante C,2015-01-04,26,3312
