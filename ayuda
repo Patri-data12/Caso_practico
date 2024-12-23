@@ -1,0 +1,38 @@
+copia_lista_fich3 = lista_fich3[1:]
+print(copia_lista_fich3)
+
+cabecera_lista_fich3 = lista_fich3[:1]
+print(cabecera_lista_fich3)
+
+lista_equipos_temperaturas = []
+for item in copia_lista_fich3:
+    if len(item) >= 4:
+        lista_equipos_temperaturas.append((item[0],float(item[3])))
+print(lista_equipos_temperaturas)
+
+
+# Crear un diccionario para agrupar por el primer elemento
+grupo_por_equipo = {}
+
+# Recorrer la lista y agrupar los elementos
+for tupla in lista_equipos_temperaturas:
+    equipo = tupla[0]
+    if equipo not in grupo_por_equipo:
+        grupo_por_equipo[equipo] = []
+    grupo_por_equipo[equipo].append(tupla[1])
+
+for equipo, valores in grupo_por_equipo.items():
+    suma_valores = sum(valores)
+    numero_valores = len(valores)
+    promedio = suma_valores / numero_valores 
+  
+    # Imprimir el promedio
+    print(f"El promedio de los valores para {equipo} es: {promedio}")
+
+# Calculamos el máximo
+
+for equipo, valores in grupo_por_equipo.items():
+    maximo = max(valores)
+    print(f"El máximo de los valores para {equipo} es: {maximo}")
+print("Fin del ejercicio")
+#termnina el ejercicio
