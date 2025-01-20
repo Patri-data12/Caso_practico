@@ -36,3 +36,5 @@ for equipo, valores in grupo_por_equipo.items():
     print(f"El máximo de los valores para {equipo} es: {maximo}")
 print("Fin del ejercicio")
 #termnina el ejercicio
+
+#Comentario Patricia
